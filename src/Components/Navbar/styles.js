@@ -2,9 +2,17 @@ import styled from "styled-components";
 
 
 export const Container = styled.header`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 1rem;
     padding: 2rem;
     background-color: ${({theme})=> theme.COLORS.DARK_700};
+
+    img{
+      height: 3rem;
+      align-self: center;
+    }
     
     .menu-burguer {
         width: 2.5rem;
@@ -32,18 +40,18 @@ export const Container = styled.header`
     }
 
     @keyframes firstLinetoOpen {
-      0%   {
-        transform: translateY(0);
-      }
+  0%   {
+    transform: translateY(0);
+  }
 
-      50% { 
-        transform: translateY(2px);
-      }
+  50% { 
+    transform: translateY(8px);
+  }
 
-      100% {
-        transform: translateY(1px) rotate(45deg);
-      }
-    }
+  100% {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
 
 @keyframes firstLinetoClose {
   0%   {
@@ -78,7 +86,7 @@ export const Container = styled.header`
   }
 
   100% {
-    transform: translateY(-16px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
@@ -90,5 +98,6 @@ export const Container = styled.header`
   100% {
     transform: translateY(0);
   }
+
 }
 `

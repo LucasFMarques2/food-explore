@@ -1,6 +1,7 @@
 import {Container, Form} from './styles'
 import { Input } from '../../Components/Input'
 import { Button } from '../../Components/Button'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 
 export function Login(){
@@ -26,7 +27,7 @@ export function Login(){
                     placeholder="No mínimo 6 caracteres"
                />
                 <Button title="Entrar"/>
-                <a href="#">Criar uma conta</a>
+                <Link to="cadastra">Criar uma conta</Link>
             </Form>
 
     

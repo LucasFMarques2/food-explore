@@ -1,10 +1,11 @@
 import { Container } from "./styles";
 
-export function Button({title, icon: Icon}){
+export function Button({title, icon: Icon, order}){
     return(
         <Container>
             {Icon && <Icon size={20}/>}
-            {title}
+            <h4>{title}</h4>
+            {order && <span>({order})</span>}
         </Container>
     )
 }

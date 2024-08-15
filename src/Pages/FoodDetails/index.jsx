@@ -9,7 +9,6 @@ export function FoodDatails(){
             <p>Imagem do prato</p>
             <h2>Salada Ravanello</h2>
             <span>Detalhes do produto</span>
-            but
         </Container>
     )
 }

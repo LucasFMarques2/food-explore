@@ -27,13 +27,19 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-    h1{
-        display: none;
-    }
     width: 80%;
     text-align: center;
+    h1{
+      display: none;
+    }
+
     button{
         margin-bottom: 3.2rem;
+    }
+
+    #searchArea{
+        padding: 0 .9rem;
+        margin-bottom: 1.9rem;
     }
 
     @media(min-width: 905px){
@@ -46,6 +52,6 @@ export const Form = styled.form`
         padding: 6.4rem;
         width: 50rem;
 
-        background: ${({theme})=> theme.COLORS.DARK_800};
+        background: ${({ theme }) => theme.COLORS.DARK_800};
     }
 `

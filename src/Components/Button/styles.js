@@ -17,5 +17,6 @@ export const Container = styled.button`
     }
     h4{
         margin-right: .5rem;
+        font-weight: 400;
     }
 `;

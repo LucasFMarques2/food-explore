@@ -43,9 +43,8 @@ export const Container = styled.div`
         outline:none;
     }
 
-    @media(min-width: 950px){
-        #searchArea{
-            padding-left: 20%;
-        }
+    #searchArea{
+        padding: 0 .9rem;
+        margin-bottom: 1.9rem;
     }
 `
